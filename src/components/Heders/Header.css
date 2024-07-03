@@ -1,0 +1,248 @@
+header {
+    margin: auto;
+    background-color: #4E4E5A;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header {
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 20px;
+}
+
+.header .left {
+    display: flex;
+    align-items: center;
+}
+
+.header .left .logo img {
+    width: 50px;
+}
+
+.header .right {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.top {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.bottem {
+    margin-top: 17px;
+    display: flex;
+}
+
+.header .right .content .list,
+.header .right .content .list1 {
+    display: flex;
+}
+
+.header .right .content .list .list_1,
+.header .right .content .list1 .list1_1 {
+    display: flex;
+    align-items: center;
+}
+
+.header .right .content .list .list_1 li,
+.header .right .content .list1 .list1_1 li {
+    list-style: none;
+    margin-left: 12px;
+    font-size: 15px;
+    position: relative;
+    cursor: pointer;
+}
+
+.header .right .content .list .list_1 li.text:hover,
+.header .right .content .list1 .list1_1 li.text:hover {
+    color: rgb(17, 230, 17);
+}
+
+.header .right .content .list .list_1 li:hover .icon1 svg,
+.header .right .content .list1 .list1_1 li:hover .icon1 svg {
+    color: rgb(17, 230, 17);
+    transform: rotate(180deg);
+    transition: all 0.2s linear;
+}
+
+.header .right .content .list .list_1 .dropdown-content,
+.header .right .content .list1 .list1_1 .mega-menu {
+    display: none;
+    position: absolute;
+    background-color: #4E4E5A;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    width: 250px;
+    left: 0;
+    top: 100%;
+    padding: 20px;
+    font-size: 13px;
+}
+
+.header .right .content .list1 .list1_1 .mega-menu1 {
+    width: 350px;
+}
+
+.header .right .content .list .list_1 .dropdown:hover .dropdown-content,
+.header .right .content .list1 .list1_1 li:hover .mega-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.header .right .content .list .list_1 .dropdown-content a,
+.header .right .content .list1 .list1_1 .mega-menu a {
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    display: block;
+}
+
+.header .right .content .list .list_1 .dropdown-content a:hover,
+.header .right .content .list1 .list1_1 .mega-menu a:hover {
+    background-color: rgb(20, 121, 20);
+}
+
+.header .input_fill {
+    display: flex;
+    align-items: center;
+}
+
+.header .input_fill input {
+    outline: none;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #4E4E5A;
+    color: white;
+}
+
+.header .input_fill .icon svg {
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+.header .text1 {
+    color: rgb(228, 228, 21);
+}
+
+.header .btn {
+    background-color: red;
+    border: none;
+    padding: 5px;
+    color: white;
+}
+
+.sticky-header {
+    position: sticky;
+    top: 80px;
+    transform: translateY(-80px);
+    animation: stickyHeader 0.5s ease forwards;
+}
+
+.buggermenu {
+    display: none;
+}
+
+.open {
+    display: none;
+}
+
+.col1 {
+    display: none;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .icon svg {
+        margin-top: 15px;
+    }
+
+    .header .right .content .list1 .list1_1 li {
+        list-style: none;
+        margin-left: 12px;
+        font-size: 15px;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .header .input_fill input {
+        width: 100px;
+        font-size: 11px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .header .right .content .list .list_1 li,
+    .header .right .content .list1 .list1_1 li {
+        list-style: none;
+        margin-left: 12px;
+        font-size: 12px;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .header .input_fill input {
+        width: 100px;
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 376px) {
+    .header .right .content {
+        display: none;
+    }
+
+    .buggermenu {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        color: white;
+        font-size: 20px;
+    }
+
+    .col1 {
+        display: none;
+        position: absolute;
+        background-color: gray;
+        margin-left: -300px;
+        margin-top: 60px;
+        z-index: 1000;
+        padding: 10px;
+        width: 80%;
+    }
+
+    .col1.open {
+        display: block;
+        /* Display col1 when menu is open */
+    }
+
+    .col12 {
+        /* margin-top: 20px; */
+        padding: 20px;
+        ;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .right .buggermenu {
+        margin-top: 15px;
+    }
+
+    .header .left .logo img {
+        width: 30px;
+    }
+}
