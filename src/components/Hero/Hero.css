@@ -146,7 +146,7 @@
     }
 }
 
-@media only screen and (max-width: 376px) {
+@media only screen and (max-width: 430px) {
     .image1 {
         width: 100%;
     }
@@ -308,7 +308,7 @@
 
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 430px) {
 
     .image2 .content1,
     .image3 .content1,
@@ -534,7 +534,7 @@
     }
 }
 
-@media only screen and (max-width: 376px) {
+@media only screen and (max-width: 430px) {
 
     .image8 .content1,
     .image9 .content1 {
@@ -1295,7 +1295,7 @@
     }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 430px) {
     .temp {
         margin-left: 150px;
         font-size: 28px;

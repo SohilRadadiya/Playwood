@@ -200,7 +200,7 @@ footer {
     }
 }
 
-@media only screen and (max-width: 376px) {
+@media only screen and (max-width: 430px) {
     .footer {
         display: none;
     }
